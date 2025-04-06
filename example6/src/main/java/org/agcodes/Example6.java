@@ -14,7 +14,7 @@ public class Example6 {
     var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
     var vehicle= context.getBean(Vehicle.class);
-    // The vehicle name will be null as it's created by IOC container
+    // The vehicle name will be null as it's created by IOC container.
     System.out.println("Vehicle name from Spring Context is: " + vehicle.getName());
     vehicle.printHello();
 
