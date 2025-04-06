@@ -18,6 +18,10 @@ public class Example6 {
     System.out.println("Vehicle name from Spring Context is: " + vehicle.getName());
     vehicle.printHello();
 
+    //Shuts down the context.
+    //Calls any @PreDestroy methods on beans before destroying them.
+    context.close();
+
 
   }
 }
