@@ -16,16 +16,15 @@ public class Person {
   /*
   (required = false) to avoid "NoSuchBeanDefinitionException"
    */
+
   @Autowired(required = false)
   private Vehicle vehicle;
 
   public Person() {
   }
-
   public String getName() {
     return name;
   }
-
   public void setName(String name) {
     this.name = name;
   }
