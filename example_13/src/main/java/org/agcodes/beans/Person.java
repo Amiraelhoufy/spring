@@ -3,10 +3,10 @@ package org.agcodes.beans;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("personBean")
 public class Person {
 
-  private String name="Lucy";
+  private String name = "Lucy";
   private final Vehicle vehicle;
 
   /*
@@ -30,5 +30,11 @@ public class Person {
     return vehicle;
   }
 
-
+  @Override
+  public String toString() {
+    return "Person{" +
+        "name='" + name + '\'' +
+        ", vehicle=" + vehicle +
+        '}';
+  }
 }

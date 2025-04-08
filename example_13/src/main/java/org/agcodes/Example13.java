@@ -10,11 +10,20 @@ public class Example13 {
   public static void main(String[] args) {
 
     var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+    String[] vehicleBeanName = context.getBeanNamesForType(Vehicle.class);
+    String[] personBeanName = context.getBeanNamesForType(Person.class);
+
+    System.out.println("Vehicle Bean Name: " + vehicleBeanName[0]);
+    System.out.println("Person Bean Name: " + personBeanName[0]);
+
     Vehicle vehicle = context.getBean(Vehicle.class);
     Person person = context.getBean(Person.class);
 
-    System.out.println("Person name from spring context is: " + person.getName());
-    System.out.println("Vehicle name from spring context is: " + vehicle.getName());
-    System.out.println("The vehicle that the person owns is: " + person.getVehicle());
+    vehicle.getVehicleServices().playMusic();
+    vehicle.getVehicleServices().rotateTyres();
+
+    System.out.println(vehicle.toString());
+    System.out.println(person.toString());
+
   }
 }
