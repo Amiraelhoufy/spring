@@ -22,8 +22,11 @@ public class Example13 {
     vehicle.getVehicleServices().playMusic();
     vehicle.getVehicleServices().rotateTyres();
 
-    System.out.println(vehicle.toString());
-    System.out.println(person.toString());
+    person.getVehicle().getVehicleServices().playMusic();
+    person.getVehicle().getVehicleServices().rotateTyres();
+
+//    System.out.println(vehicle.toString());
+//    System.out.println(person.toString());
 
   }
 }
