@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.agcodes</groupId>
-  <artifactId>example6</artifactId>
+  <artifactId>example11</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
@@ -24,12 +24,6 @@
       <groupId>jakarta.annotation</groupId>
       <artifactId>jakarta.annotation-api</artifactId>
       <version>3.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>jakarta.annotation</groupId>
-      <artifactId>jakarta.annotation-api</artifactId>
-      <version>3.0.0</version>
-      <scope>compile</scope>
     </dependency>
   </dependencies>
 </project>
