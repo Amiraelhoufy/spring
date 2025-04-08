@@ -27,7 +27,7 @@ public class ProjectConfig {
   Person person = new Person();
   person.setName("Lucy");
 
-  /* Wiring Beans using "Method Parameter"   */
+  /* Wiring Beans using "Method Parameter" */
 
   person.setVehicle(vehicle);
   return person;
