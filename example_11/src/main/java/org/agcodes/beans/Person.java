@@ -9,8 +9,8 @@ public class Person {
   private String name="Lucy";
   /*
    1. Field Injection:
-   ->  not recommended for production
-   -> The field can't be Final -> Because Spring injects the dependency after the object is constructed
+     - not recommended for production
+     - The field can't be Final -> Because Spring injects the dependency after the object is constructed
    */
 
   /*
