@@ -11,22 +11,19 @@ public class Person {
 
   public Person() {
   }
-
   public String getName() {
     return name;
   }
-
   public void setName(String name) {
     this.name = name;
   }
-
   public Vehicle getVehicle() {
     return vehicle;
   }
 
   /*
    2. Setter Injection:
-    -> Optional dependencies or when you need to change them later.
+      - Optional dependencies or when you need to change them later.
    */
   @Autowired
   public void setVehicle(Vehicle vehicle) {
