@@ -1,0 +1,117 @@
+package org.agcodes.services;
+
+import java.time.Duration;
+import java.time.Instant;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.agcodes.model.Song;
+import org.agcodes.interfaces.Speakers;
+import org.agcodes.interfaces.Tyres;
+import org.apache.commons.logging.Log;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class VehicleServices {
+
+  private Logger logger = Logger.getLogger(VehicleServices.class.getName());
+
+  private final Speakers speakers;
+private final Tyres tyres;
+
+  @Autowired
+  public VehicleServices(@Qualifier("boseSpeakers") Speakers speakers, @Qualifier("michelinTyres") Tyres tyres) {
+    System.out.println("vehicleServices is created by Spring");
+    this.speakers = speakers;
+    this.tyres = tyres;
+  }
+
+  public void rotateTyres(){
+    String rotation = tyres.rotate();
+    System.out.println(rotation);
+  }
+  public Speakers getSpeakers() {
+    return speakers;
+  }
+
+  public Tyres getTyres() {
+    return tyres;
+  }
+
+  @Override
+  public String toString() {
+    return "VehicleServices{" +
+        "speakers=" + speakers +
+        ", tyres=" + tyres +
+        '}';
+  }
+
+  public String moveVehicle(boolean vehicleStarted) {
+    // Handled in @Around
+    /*Instant start = Instant.now();
+    logger.info("method execution started");*/
+    // Handled in @Before
+   /*
+    String status = null;
+ if(vehicleStarted){
+      status = tyres.rotate();
+    }else{
+      logger.log(Level.SEVERE,"The vehicle hasn't been started to perform the operation");
+    }*/
+
+    // Handled in @Around
+   /* logger.info("method execution ended");
+    Instant finish = Instant.now();
+    long timeElapsed = Duration.between(start,finish).toMillis();
+    logger.info("Time taken to execute the method: " + timeElapsed);*/
+
+
+    // To test @AfterThrowing aspect
+//    throw new NullPointerException("Null pointer exception occurred!");
+    return tyres.rotate();
+  }
+
+  public String applyBrake(boolean vehicleStarted) {
+    // Handled in @Around
+  /*  Instant start = Instant.now();
+    logger.info("Method execution started");*/
+
+    // Handled in @Before
+/*
+    String status = null;
+   if(vehicleStarted){
+      status = tyres.stop();
+    }else{
+      logger.log(Level.SEVERE,"The vehicle hasn't been started to perform the operation");
+    }*/
+    // Handled in @Around
+   /* logger.info("method execution ended");
+    Instant finish = Instant.now();
+    long timeElapsed = Duration.between(start,finish).toMillis();
+    logger.info("Time taken to execute the method: " + timeElapsed);*/
+    return tyres.stop();
+  }
+
+  public String playMusic(boolean vehicleStarted, Song song) {
+    // Handled in @Around
+ /*   Instant start = Instant.now();
+    logger.info("Method execution started");*/
+    // Handled in @Before
+   /*
+    String music = null;
+    if(vehicleStarted){
+      music = speakers.makeSound(song);
+    }else{
+      logger.log(Level.SEVERE,"The vehicle hasn't been started to perform the operation");
+    }
+    */
+    // Handled in @Around
+   /* logger.info("method execution ended");
+    Instant finish = Instant.now();
+    long timeElapsed = Duration.between(start,finish).toMillis();
+    logger.info("Time taken to execute the method: " + timeElapsed);*/
+    return speakers.makeSound(song);
+  }
+
+}

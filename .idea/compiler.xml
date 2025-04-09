@@ -20,9 +20,14 @@
         <module name="example4" />
         <module name="example1" />
         <module name="example_16" />
+        <module name="example_17" />
         <module name="example_14" />
         <module name="example_15" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="example_16 (1)" target="17" />
+      <module name="example_16 (2)" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
