@@ -19,6 +19,7 @@
         <module name="example5" />
         <module name="example4" />
         <module name="example1" />
+        <module name="example_16" />
         <module name="example_14" />
         <module name="example_15" />
       </profile>
