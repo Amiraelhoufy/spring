@@ -6,9 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="example_20" />
-        <module name="example_18" />
-        <module name="example_19" />
+        <module name="example_21" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,8 +29,11 @@
       <module name="example_16 (1)" target="17" />
       <module name="example_16 (2)" target="17" />
       <module name="example_17" target="17" />
+      <module name="example_18" target="17" />
       <module name="example_18 (1)" target="17" />
       <module name="example_18 (2)" target="17" />
+      <module name="example_19" target="17" />
+      <module name="example_20" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -42,6 +43,7 @@
       <module name="example_18 (2)" options="-parameters" />
       <module name="example_19" options="-parameters" />
       <module name="example_20" options="-parameters" />
+      <module name="example_21" options="-parameters" />
     </option>
   </component>
 </project>
