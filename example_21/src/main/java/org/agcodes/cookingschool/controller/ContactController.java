@@ -2,6 +2,7 @@ package org.agcodes.cookingschool.controller;
 
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
+import lombok.extern.slf4j.Slf4j;
 import org.agcodes.cookingschool.model.Contact;
 import org.agcodes.cookingschool.service.ContactService;
 import org.slf4j.Logger;
@@ -11,11 +12,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
+@Slf4j
 @Controller
 public class ContactController {
 
-  private static Logger log = LoggerFactory.getLogger(ContactController.class);
+//  private static Logger log = LoggerFactory.getLogger(ContactController.class);
   private final ContactService contactService;
 
   @Autowired
