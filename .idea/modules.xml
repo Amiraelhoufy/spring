@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/example_18/example_18.iml" filepath="$PROJECT_DIR$/example_18/example_18.iml" />
       <module fileurl="file://$PROJECT_DIR$/example_19/example_19.iml" filepath="$PROJECT_DIR$/example_19/example_19.iml" />
       <module fileurl="file://$PROJECT_DIR$/example_20/example_20.iml" filepath="$PROJECT_DIR$/example_20/example_20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example_21/example_21.iml" filepath="$PROJECT_DIR$/example_21/example_21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example_22/example_22.iml" filepath="$PROJECT_DIR$/example_22/example_22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example_23/example_23.iml" filepath="$PROJECT_DIR$/example_23/example_23.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring.iml" filepath="$PROJECT_DIR$/.idea/spring.iml" />
     </modules>
   </component>
