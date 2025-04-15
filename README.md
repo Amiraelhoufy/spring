@@ -27,7 +27,7 @@ This repository contains my practice code and mini projects from the Udemy cours
    - Types: <br />
    1- ```Bean Factory``` &rarr; Lazy initialization. <br />
    2- ```Application Context``` &rarr; More advanced (used is most spring apps). <br />
- 5. ```Context ``` : [Spring Brain] &rarr; advance version of IOC Container. <br />
+ 5. ```Context ``` (Application Context) : [Spring Brain] &rarr; advance version of IOC Container. <br />
    - Extra features: International support, Event propagation, AOP integration, Easier access to environ./ config. <br />
  6. ```SpEl ``` (Spring Expression Language): Let you write small expressions inside annotations or XML to (Access Values/ Call Methods/ do math). <br />
    ``` @Value("#{2 + 3}") ``` &rarr; ```#``` is used to reference beans, methods, or expressions. <br />
