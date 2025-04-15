@@ -5,7 +5,7 @@
 spring.devtools.restart.enabled=true
 spring.devtools.livereload.enabled=true
 
-# If there is no customized user configuration, default credentials "username: user" and the "password is randomly generated" and printed in the console
+# If there is no customized user config -> default credentials "username: user" and the "password is randomly generated" and printed in the console
 # In real-world we don't configure users as below
 
 spring.security.user.name=eazybytes
