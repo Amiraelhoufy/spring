@@ -1,11 +1,11 @@
-package org.agcodes.cookingschool.controller;
+package org.agcodes.eazyschool.controller;
 
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-import org.agcodes.cookingschool.model.Contact;
-import org.agcodes.cookingschool.service.ContactService;
+import org.agcodes.eazyschool.model.Contact;
+import org.agcodes.eazyschool.service.ContactService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
