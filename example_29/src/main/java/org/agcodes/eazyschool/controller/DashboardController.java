@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class DashboardController {
 
 
-  @RequestMapping(value = "/dashboard") /* Accepts any HTTP method (not ideal) */
-//@GetMapping("/dashboard")
+//  @RequestMapping(value = "/dashboard") /* Accepts any HTTP method (not ideal) */
+@GetMapping("/dashboard")
 public String displayDashboard(Model model, Authentication authentication){
     model.addAttribute("username", authentication.getName());
     model.addAttribute("roles",authentication.getAuthorities().toString());

@@ -17,8 +17,8 @@ public class LoginController {
  /* If you're redirecting back to /login?error or /login?logout after a POST login attempt, and for some reason that redirect ends up being a POST instead of a GET
    However, in a clean Spring Security setup, the controller only needs to handle GET, because the login form’s POST is handled by Spring Security.*/
 
-  @RequestMapping(value = "/login", method = {RequestMethod.GET, RequestMethod.POST})
-//  @GetMapping("/login")
+//  @RequestMapping(value = "/login", method = {RequestMethod.GET, RequestMethod.POST})
+  @GetMapping("/login")
   public String displayLoginPage(@RequestParam(value = "error", required = false) String error,
                                 @RequestParam(value = "logout",required = false) String logout, Model model){
 
