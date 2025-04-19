@@ -45,7 +45,7 @@ This repository contains my practice code and mini projects from the Udemy cours
 		</dependency>
    ```
 
--  ** Spring Security Functions **: <br />
+-  **Spring Security Functions**: <br />
 
 | Method        | Purpose                                                                                                                                          | 
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
