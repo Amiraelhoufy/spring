@@ -33,6 +33,8 @@ This repository contains my practice code and mini projects from the Udemy cours
    ``` @Value("#{2 + 3}") ``` &rarr; ```#``` is used to reference beans, methods, or expressions. <br />
   ``` @Value("${app.name}")``` or ```@Value("#{myBean.someMethod()}") ``` &rarr; ``` $``` Gets value from application.properties. <br />
 
+___
+
  **• 🔒 Spring Security:** 
  - :zap: Powerful ```Authentication``` & ```access-control``` framework. <br />
  - With a minimum of configuration, it provides ```Authentication``` & ```Authorization``` & ```Protection``` against common attacks (CSRF , CORs) using out of the box features. <br />
