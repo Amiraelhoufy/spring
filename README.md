@@ -12,9 +12,9 @@ This repository contains my practice code and mini projects from the Udemy cours
 - Entity relationships (OneToOne, OneToMany, ManyToMany)
 - Query methods and JPQL
 - Transactions, EntityManager, and repositories
+---
 
 # **Core Spring Framework concepts:**
-***
 # **• Spring Core:** 
  - The :heart: of the entire spring. <br />
  - Contains Base framework classes, principles and mechanisms. <br />
