@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7ce15c04-5cd1-4236-990a-8c8aff499edd)# 📘 Spring Boot, JPA & Hibernate - Zero to Mastery (Course Practice)
+# 📘 Spring Boot, JPA & Hibernate - Zero to Mastery (Course Practice)
 
 This repository contains my practice code and mini projects from the Udemy course:  
 **[Spring, Spring Boot, Spring Data JPA & Hibernate - Zero to Mastery](https://www.udemy.com/course/spring-springboot-jpa-hibernate-zero-to-master/?kw=master+spring+6&src=sac&couponCode=LETSLEARNNOW)**
