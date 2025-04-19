@@ -36,7 +36,7 @@ This repository contains my practice code and mini projects from the Udemy cours
  **• 🔒 Spring Security:** 
  - :zap: Powerful ```Authentication``` & ```access-control``` framework. <br />
  - With a minimum of configuration, it provides ```Authentication``` & ```Authorization``` & ```Protection``` against common attacks (CSRF , CORs) using out of the box features. <br />
- - Good integration with Authentication providers as: JWT (Java web access token), OAuth2 and LDAP. <br />
+ - Good integration with ```Authentication providers``` as: JWT (Java web access token), OAuth2 and LDAP. <br />
  - Dependency:
    ```
   	<dependency>
