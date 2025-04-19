@@ -14,7 +14,8 @@ This repository contains my practice code and mini projects from the Udemy cours
 - Transactions, EntityManager, and repositories
 
 # **Core Spring Framework concepts:**
- **#• Spring Core:** 
+***
+# **• Spring Core:** 
  - The :heart: of the entire spring. <br />
  - Contains Base framework classes, principles and mechanisms. <br />
  - Spring framework and other projects are built on top of "Spring Core". <br />
@@ -35,7 +36,7 @@ This repository contains my practice code and mini projects from the Udemy cours
 
 ___
 
- **#• 🔒 Spring Security:** 
+ #**• 🔒 Spring Security:** 
  - :zap: Powerful ```Authentication``` & ```access-control``` framework. <br />
  - With a minimum of configuration, it provides ```Authentication``` & ```Authorization``` & ```Protection``` against common attacks (CSRF , CORs) using out of the box features. <br />
  - Good integration with ```Authentication providers``` as: JWT (Java web access token), OAuth2 and LDAP. <br />
