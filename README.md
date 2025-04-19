@@ -1,4 +1,4 @@
-# 📘 Spring Boot, JPA & Hibernate - Zero to Mastery (Course Practice)
+![image](https://github.com/user-attachments/assets/7ce15c04-5cd1-4236-990a-8c8aff499edd)# 📘 Spring Boot, JPA & Hibernate - Zero to Mastery (Course Practice)
 
 This repository contains my practice code and mini projects from the Udemy course:  
 **[Spring, Spring Boot, Spring Data JPA & Hibernate - Zero to Mastery](https://www.udemy.com/course/spring-springboot-jpa-hibernate-zero-to-master/?kw=master+spring+6&src=sac&couponCode=LETSLEARNNOW)**
@@ -32,4 +32,23 @@ This repository contains my practice code and mini projects from the Udemy cours
  6. ```SpEl ``` (Spring Expression Language): Let you write small expressions inside annotations or XML to (Access Values/ Call Methods/ do math). <br />
    ``` @Value("#{2 + 3}") ``` &rarr; ```#``` is used to reference beans, methods, or expressions. <br />
   ``` @Value("${app.name}")``` or ```@Value("#{myBean.someMethod()}") ``` &rarr; ``` $``` Gets value from application.properties. <br />
+
+ **• 🔒 Spring Security:** 
+ - :zap: Powerful ```Authentication``` & ```access-control``` framework. <br />
+ - With a minimum of configuration, it provides ```Authentication``` & ```Authorization``` & ```Protection``` against common attacks (CSRF , CORs) using out of the box features. <br />
+ - Good integration with Authentication providers as: JWT (Java web access token), OAuth2 and LDAP. <br />
+ - Dependency:
+   ```
+  	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+  ```
+-  **Spring Security Functions **: <br />
+
+| Method        | Purpose                                                                                                                                          | 
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| `defaultSecurityFilterChain()` | Define `custom security rules` and override default Spring Security behavior[Define it as a `@Bean` in a `@Configuration` class]|
+| `permitAll()` | Allow access to everyone `without security login` [Public APIs, Paths, CSS, Images, JS files ...]                                                |
+| `denyAll()`   | Deny access to everyone used to `retire` a specific API temporarily with out removing the code [Testing Purposes]                                |
 
