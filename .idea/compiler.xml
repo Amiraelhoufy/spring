@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="example_31" />
         <module name="example_32" />
+        <module name="example_33" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -46,6 +47,8 @@
       <module name="example_28" target="17" />
       <module name="example_29" target="17" />
       <module name="example_30" target="17" />
+      <module name="example_31" target="17" />
+      <module name="example_32" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -67,6 +70,7 @@
       <module name="example_30" options="-parameters" />
       <module name="example_31" options="-parameters" />
       <module name="example_32" options="-parameters" />
+      <module name="example_33" options="-parameters" />
     </option>
   </component>
 </project>
