@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="example_31" />
+        <module name="example_34" />
         <module name="example_32" />
         <module name="example_33" />
+        <module name="example_31" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -71,6 +72,7 @@
       <module name="example_31" options="-parameters" />
       <module name="example_32" options="-parameters" />
       <module name="example_33" options="-parameters" />
+      <module name="example_34" options="-parameters" />
     </option>
   </component>
 </project>
