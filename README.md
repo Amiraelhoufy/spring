@@ -66,22 +66,22 @@ ___
  - `Endpoint`: The `URL` used to `connect` your web app to the RDS database.<br />
  - `Port`: Default MySQL port is `3306`.<br />
 
-**• 🧩 SQL Client (SQLectron):** - `Lightweight alternative to MySQL Workbench or full MySQL server.<br />
-  				- Easy setup to connect to SQL databases.<br />
+**• 🧩 SQL Client (SQLectron):** - `Lightweight` alternative to MySQL Workbench or full MySQL server.<br />
+  				- `Easy setup` to connect to SQL databases.<br />
 
 **•🔐 Security Groups (Firewall for AWS Resources):** <br />
-- Outbound Rules: Allow DB to send traffic out (AWS → World). Usually set to "allow all." / "All traffic"
-- Inbound Rules: Allow external sources to reach the DB (World → AWS).
+- `Outbound Rules`: Allow DB to send traffic out `(AWS → World)`. Usually set to "allow all (All traffic)"
+- `Inbound Rules`: Allow external sources to reach the DB `(World → AWS)`.
 
 **•🌍 IPv4 vs IPv6 :** <br />
-- IPv4: Older, more common. Example: 192.168.1.1 <br />
-- IPv6: Newer, longer format. Example: 2001:0db8:85a3::8a2e:0370:7334 <br />
+- `IPv4`: Older, more common. Example: 192.168.1.1 <br />
+- `IPv6`: Newer, longer format. Example: 2001:0db8:85a3::8a2e:0370:7334 <br />
 ___
 
  # **• :herb: Thymeleaf:** 
 
 **-🛠️ Static Resources Tip:** <br />
-- If static files (CSS/JS) aren’t loading  → make sure to use a "/" at the beginning of the path in href `(e.g., href="/assets/css/style-starter.css")`. <br />
+- If static files (CSS/JS) aren’t loading  → make sure to use a `"/"` at the beginning of the path in href `(e.g., href="/assets/css/style-starter.css")`. <br />
 
 
 
