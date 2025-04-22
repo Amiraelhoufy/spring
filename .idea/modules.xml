@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/example_28/example_28.iml" filepath="$PROJECT_DIR$/example_28/example_28.iml" />
       <module fileurl="file://$PROJECT_DIR$/example_29/example_29.iml" filepath="$PROJECT_DIR$/example_29/example_29.iml" />
       <module fileurl="file://$PROJECT_DIR$/example_30/example_30.iml" filepath="$PROJECT_DIR$/example_30/example_30.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example_31/example_31.iml" filepath="$PROJECT_DIR$/example_31/example_31.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example_32/example_32.iml" filepath="$PROJECT_DIR$/example_32/example_32.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring.iml" filepath="$PROJECT_DIR$/.idea/spring.iml" />
     </modules>
   </component>
