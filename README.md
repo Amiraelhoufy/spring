@@ -92,7 +92,7 @@ and MyBatis `maps` the `results` to `Java objects` automatically.<br />
 
 ___
 
- # ** 🔒 Spring Security:** 
+ # **🔒 Spring Security:** 
  - :zap: Powerful ```Authentication``` & ```access-control``` framework. <br />
  - With a minimum of configuration, it provides ```Authentication``` & ```Authorization``` & ```Protection``` against common attacks (CSRF , CORs) (Cross-Site Request Forgery, Cross-Origin Resource Sharing) using out of the box features. <br />
  - Good integration with ```Authentication providers``` as: JWT (Java web access token), OAuth2 and LDAP. <br />
