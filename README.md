@@ -114,7 +114,7 @@ ___
 
 ___
 
- # ** :cloud: Amazon Web Services (AWS) :** 
+ # **:cloud: Amazon Web Services (AWS) :** 
  - `DB deployment`: `1- Local Deployment` (on PC) or `2- Cloud Deployment` (AWS, GCP, Azure, etc)
  - `Amazon RDS` (Relational Database) is a `managed service` that makes it easy to set up, operate, Secure, reliable, and scale a relational database in the `cloud`. <br />
  - Free Tier Tip: Start and stop the DB only when using it to stay within free tier limits.<br />
@@ -134,7 +134,7 @@ ___
 - `IPv6`: Newer, longer format. Example: 2001:0db8:85a3::8a2e:0370:7334 <br />
 ___
 
- # ** :herb: Thymeleaf:** 
+ # **:herb: Thymeleaf:** 
 
 **-🛠️ Static Resources Tip:** <br />
 - If static files (CSS/JS) aren’t loading  → make sure to use a `"/"` at the beginning of the path in href `(e.g., href="/assets/css/style-starter.css")`. <br />
