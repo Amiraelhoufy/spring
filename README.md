@@ -36,7 +36,7 @@ This repository contains my practice code and mini projects from the Udemy cours
 
 ___
 
- # **:electric_plug: Spring Data (From JDBC to Spring Data JPA)":**
+ # **:electric_plug: Spring Data (From JDBC to Spring Data JPA):**
 ```✅ Persistence Layer``` &rarr; Layer that (we write all the code related) is responsible for all `database interactions` (CRUD operations) inorder to fetch records. <br />
 - Traditionally, developers had to manually: <br />
 1- Write SQL statements. <br />
