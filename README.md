@@ -31,8 +31,8 @@ This repository contains my practice code and mini projects from the Udemy cours
  5. ```Context ``` (Application Context) : [Spring Brain] &rarr; advance version of IOC Container. <br />
    - Extra features: International support, Event propagation, AOP integration, Easier access to environ./ config. <br />
  6. ```SpEl ``` (Spring Expression Language): Let you write small expressions inside annotations or XML to (Access Values/ Call Methods/ do math). <br />
-   ``` @Value("#{2 + 3}") ``` &rarr; ```#``` is used to reference beans, methods, or expressions. <br />
-  ``` @Value("${app.name}")``` or ```@Value("#{myBean.someMethod()}") ``` &rarr; ``` $``` Gets value from application.properties. <br />
+   ``` @Value("#{2 + 3}") ``` or ```@Value("#{myBean.someMethod()}") ``` &rarr; ```#``` is used to reference beans, methods, or expressions. <br />
+  ``` @Value("${app.name}")```  &rarr; ``` $``` Gets value from application.properties. <br />
 
 ___
 
@@ -92,9 +92,9 @@ and MyBatis `maps` the `results` to `Java objects` automatically.<br />
 
 ___
 
- # **• 🔒 Spring Security:** 
+ # ** 🔒 Spring Security:** 
  - :zap: Powerful ```Authentication``` & ```access-control``` framework. <br />
- - With a minimum of configuration, it provides ```Authentication``` & ```Authorization``` & ```Protection``` against common attacks (CSRF , CORs) using out of the box features. <br />
+ - With a minimum of configuration, it provides ```Authentication``` & ```Authorization``` & ```Protection``` against common attacks (CSRF , CORs) (Cross-Site Request Forgery, Cross-Origin Resource Sharing) using out of the box features. <br />
  - Good integration with ```Authentication providers``` as: JWT (Java web access token), OAuth2 and LDAP. <br />
  - Dependency:
    ```
@@ -114,7 +114,7 @@ ___
 
 ___
 
- # **• :cloud: Amazon Web Services (AWS) :** 
+ # ** :cloud: Amazon Web Services (AWS) :** 
  - `DB deployment`: `1- Local Deployment` (on PC) or `2- Cloud Deployment` (AWS, GCP, Azure, etc)
  - `Amazon RDS` (Relational Database) is a `managed service` that makes it easy to set up, operate, Secure, reliable, and scale a relational database in the `cloud`. <br />
  - Free Tier Tip: Start and stop the DB only when using it to stay within free tier limits.<br />
@@ -134,7 +134,7 @@ ___
 - `IPv6`: Newer, longer format. Example: 2001:0db8:85a3::8a2e:0370:7334 <br />
 ___
 
- # **• :herb: Thymeleaf:** 
+ # ** :herb: Thymeleaf:** 
 
 **-🛠️ Static Resources Tip:** <br />
 - If static files (CSS/JS) aren’t loading  → make sure to use a `"/"` at the beginning of the path in href `(e.g., href="/assets/css/style-starter.css")`. <br />
