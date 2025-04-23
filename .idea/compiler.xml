@@ -10,6 +10,7 @@
         <module name="example_35" />
         <module name="example_32" />
         <module name="example_31" />
+        <module name="example_36" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -75,6 +76,7 @@
       <module name="example_33" options="-parameters" />
       <module name="example_34" options="-parameters" />
       <module name="example_35" options="-parameters" />
+      <module name="example_36" options="-parameters" />
     </option>
   </component>
 </project>
