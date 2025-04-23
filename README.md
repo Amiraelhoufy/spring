@@ -36,6 +36,62 @@ This repository contains my practice code and mini projects from the Udemy cours
 
 ___
 
+ # ** :electric_plug: Spring Data (From JDBC to Spring Data JPA)":**
+```✅ Persistence Layer``` &rarr; Layer that (we write all the code related) is responsible for all `database interactions` (CRUD operations) inorder to fetch records. <br />
+- Traditionally, developers had to manually: <br />
+1- Write SQL statements. <br />
+2- Set query parameters. <br />
+3- Iterate over results using a RowMapper (JDBC template style). <br />
+```✅ Spring Data``` &rarr; Implements all the hibernate specifications + help of hibernate framework to make developer's life much easier.<br />
+- `Parent project` that simplifies database operations. <br />
+- Contains `sub-projects` like Spring Data JPA, Spring Data MongoDB, etc.<br />
+- Automates repetitive database code using `repositories` and `annotations`.<br />
+
+```✅JPA (Java Persistence API)``` &rarr; [Specification/interface that uses the hibernate, not an implementation]
+- Defines standard `rules` and `annotations` for ORM, but it does not provide an implementation.<br />
+- Describes how to `map` Java `objects` to database `tables` (ORM) Object Relational Mapping.<br />
+- Defines `relationships`, `caching`, `lazy loading`, and more.<br />
+
+```✅ Hibernate``` &rarr; [Popular Implementation for JPA]<br />
+- The 1st and most popular ORM framework that inspired that inspired the Java EE (now Jakarta EE) team to to develope JPA.<br />
+- Handles `SQL generation`, `entity management`, and `advanced ORM features`.<br />
+
+```✅ MyBatis``` &rarr; [Not a full ORM]<br />
+- You write your `SQL Manually` ( which gives you full control over sql statement)<br />
+and MyBatis `maps` the `results` to `Java objects` automatically.<br />
+- So it sits between JDBC and Hibernate:<br />
+- `More flexible` than Hibernate (you control SQL).<br />
+- `Less manual` work than JDBC (automatic object mapping).<br />
+
+
+```✅ JDBC``` &rarr; [low-level database API / Not a ture ORM]<br />
+- You manually manage SQL, connections, and result mapping.<br />
+- Considered a mini/ limited ORM, because it doesn't handle object relationships or entity state.<br />
+
+```
+         Abstraction Level ↑
+       
+           ┌────────────────────────────┐
+           │       Spring Data          │  ← Simplifies everything via interfaces
+           └────────────────────────────┘
+                     ▲
+           ┌────────────────────────────┐
+           │         JPA API            │  ← Defines ORM rules and specifications [Interface]
+           └────────────────────────────┘
+                     ▲
+           ┌────────────────────────────┐
+           │        Hibernate           │  ← Implements JPA, handles SQL/ORM logic [Implementation]
+           └────────────────────────────┘
+                     ▲
+           ┌────────────────────────────┐
+           │     MyBatis / JDBC         │  ← Lower level, manual SQL (JDBC), 
+           │                            │     SQL mapping (MyBatis)
+           └────────────────────────────┘
+
+```
+
+___
+
  # **• 🔒 Spring Security:** 
  - :zap: Powerful ```Authentication``` & ```access-control``` framework. <br />
  - With a minimum of configuration, it provides ```Authentication``` & ```Authorization``` & ```Protection``` against common attacks (CSRF , CORs) using out of the box features. <br />
