@@ -13,9 +13,9 @@ import org.springframework.stereotype.Service;
 public class PersonService {
 
   @Autowired
-  PersonRepository personRepository;
+  private PersonRepository personRepository;
   @Autowired
-  RolesRepository rolesRepository;
+  private RolesRepository rolesRepository;
 
   public boolean saveNewPerson(Person person){
     boolean isSaved = false;
