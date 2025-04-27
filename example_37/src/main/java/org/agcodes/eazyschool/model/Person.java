@@ -1,9 +1,13 @@
 package org.agcodes.eazyschool.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
 import jakarta.validation.constraints.Email;
@@ -34,6 +38,30 @@ public class Person extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int personId;
+
+    @OneToOne(
+        fetch = FetchType.EAGER,
+        cascade = CascadeType.PERSIST,
+        targetEntity = Roles.class
+    )
+    @JoinColumn(
+        name = "role_id", // Parent table in db
+        columnDefinition = "roleId",
+        nullable = false
+    )
+    private Roles roles;
+    @OneToOne(
+        fetch = FetchType.EAGER,
+        cascade = CascadeType.ALL,
+        targetEntity = Address.class
+    )
+    @JoinColumn(
+        name="address_id",
+        columnDefinition = "addressId",
+        nullable = true
+    )
+    private Address address;
+
 
     @NotBlank(message = "Name must not be blank")
     @Size(min=3, message="Name must be at least 3 characters long")
