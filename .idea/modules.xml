@@ -2,23 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/example_18/example_18.iml" filepath="$PROJECT_DIR$/example_18/example_18.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_19/example_19.iml" filepath="$PROJECT_DIR$/example_19/example_19.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_20/example_20.iml" filepath="$PROJECT_DIR$/example_20/example_20.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_21/example_21.iml" filepath="$PROJECT_DIR$/example_21/example_21.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_22/example_22.iml" filepath="$PROJECT_DIR$/example_22/example_22.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_23/example_23.iml" filepath="$PROJECT_DIR$/example_23/example_23.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_24/example_24.iml" filepath="$PROJECT_DIR$/example_24/example_24.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_25/example_25.iml" filepath="$PROJECT_DIR$/example_25/example_25.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_26/example_26.iml" filepath="$PROJECT_DIR$/example_26/example_26.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_27/example_27.iml" filepath="$PROJECT_DIR$/example_27/example_27.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_28/example_28.iml" filepath="$PROJECT_DIR$/example_28/example_28.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_29/example_29.iml" filepath="$PROJECT_DIR$/example_29/example_29.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_30/example_30.iml" filepath="$PROJECT_DIR$/example_30/example_30.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_31/example_31.iml" filepath="$PROJECT_DIR$/example_31/example_31.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_32/example_32.iml" filepath="$PROJECT_DIR$/example_32/example_32.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_33/example_33.iml" filepath="$PROJECT_DIR$/example_33/example_33.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example_34/example_34.iml" filepath="$PROJECT_DIR$/example_34/example_34.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring.iml" filepath="$PROJECT_DIR$/.idea/spring.iml" />
     </modules>
   </component>
