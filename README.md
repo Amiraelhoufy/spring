@@ -139,7 +139,38 @@ ___
 | `denyAll()`   | Deny access to everyone used to `retire` a specific API temporarily with out removing the code [Testing Purposes]                                |
 
 ___
+ # **:trophy:Spring Annotations :** 
 
+| Annotation | Description |
+|------------|-------------|
+| `@Component` | Enables Spring to `auto-detect` and `register` the class as a Spring `bean`. |
+| `@Controller` | Marks a class as a web `request handler`. |
+| `@RestController` | Combines `@Controller` and `@ResponseBody` to simplify REST API controllers. |
+| `@RequestMapping("app/v1/")` <br> `@RequestMapping(method = RequestMethod.GET, value = "/{topicId}/courses")` | Maps HTTP requests to handler methods or classes. |
+| `@PathVariable` | Binds URI template variables to method parameters. |
+| `@RequestBody` | Binds the body of the HTTP request to a method parameter. |
+| `@Service` | Indicates a class contains `business logic`. A specialized form of `@Component`. |
+| `@Repository` | Marks a class as a `DAO` that handles data access logic. Also a specialized `@Component`. |
+| `@Entity` | Specifies that the `class` is an entity mapped to a `database table`. |
+| `@Table` | Specifies the name of the database table for the entity (use when class name and the actual table name in the database are different). |
+| `@Column` | Customize the `mapping` between entity `field` and a database `column`. |
+| `@Transient` | Excludes a field from persistence/ Not mapped into a column in database (communicate to JPA not to consider this field in any db related operations insert/update/delete/..) useful for calculated or temporary fields (e.g., age, confirmPassword). |
+| `@Id` | Defines the primary key of an entity. |
+| `@GeneratedValue` | Configures the strategy for generating primary key values. |
+| `@GeneratedValue(strategy = GenerationType.IDENTITY)` | Tells JPA to delegate the ID generation to db using an AUTO_INCREMENT column.(works perfectly with MySQL databases) |
+| `@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "employee_seq")
+  @SequenceGenerator(
+        name = "employee_seq",           // Generator name used in @GeneratedValue
+        sequenceName = "employee_seq",   // Actual sequence name in PostgreSQL
+        allocationSize = 1               // Optional: 1 = get a new value every time (no caching)
+    )` | Defines the mapping between the entity and the PostgreSQL sequence. SEQUENCE or TABLE strategies (those are used with databases like PostgreSQL, Oracle, etc.) |
+| `@Value("${CONFIG_VAL:Default}")` <br> `@Value("#{systemProperties['java.home']}")` | Injects values from environment variables or Spring Expression Language (SpEL). |
+| `@ManyToOne` + `@JoinColumn(name = "column_id")` | Maps a many-to-one relationship and defines the foreign key column. |
+
+> 💡 **Note**: `@Service` and `@Repository` are specialized types of `@Component` used to clarify the role of the bean in the application layer.
+
+
+___
  # **:cloud: Amazon Web Services (AWS) :** 
  - `DB deployment`: `1- Local Deployment` (on PC) or `2- Cloud Deployment` (AWS, GCP, Azure, etc)
  - `Amazon RDS` (Relational Database) is a `managed service` that makes it easy to set up, operate, Secure, reliable, and scale a relational database in the `cloud`. <br />
