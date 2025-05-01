@@ -98,7 +98,9 @@ ___
   2- class implements `ConstraintValidator interface` & override `isValid()` method.<br />
   3- using `Annotation` on fields inside POJO class.<br />
 
- -  **✅Validation Annotations: `@Valid` vs `@Validated**: <br />
+![Custom Validation](./assets/custom_validations.jpg)
+
+ -  **✅Validation Annotations: `@Valid` vs `@Validated`**: <br />
 
 
 | Annotation  | Group Support | Use Case |
