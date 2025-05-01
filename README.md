@@ -113,7 +113,7 @@ ___
 public String updateProfile(@ModelAttribute("profile") ProfileDTO profileDTO) {
     // ...
 }
-
+```
 ___
 
  # **🔒 Spring Security:** 
