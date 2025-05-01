@@ -158,12 +158,9 @@ ___
 | `@Id` | Defines the primary key of an entity. |
 | `@GeneratedValue` | Configures the strategy for generating primary key values. |
 | `@GeneratedValue(strategy = GenerationType.IDENTITY)` | Tells JPA to delegate the ID generation to db using an AUTO_INCREMENT column.(works perfectly with MySQL databases) |
-| `@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "employee_seq")
-  @SequenceGenerator(
-        name = "employee_seq",           // Generator name used in @GeneratedValue
-        sequenceName = "employee_seq",   // Actual sequence name in PostgreSQL
-        allocationSize = 1               // Optional: 1 = get a new value every time (no caching)
-    )` | Defines the mapping between the entity and the PostgreSQL sequence. SEQUENCE or TABLE strategies (those are used with databases like PostgreSQL, Oracle, etc.) |
+| `@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "employee_seq") <br> @SequenceGenerator(name = "employee_seq",           // Generator name used in @GeneratedValue<br> 
+sequenceName = "employee_seq",   // Actual sequence name in PostgreSQL<br> 
+allocationSize = 1               // Optional: 1 = get a new value every time (no caching))` | Defines the mapping between the entity and the PostgreSQL sequence. SEQUENCE or TABLE strategies (those are used with databases like PostgreSQL, Oracle, etc.) |
 | `@Value("${CONFIG_VAL:Default}")` <br> `@Value("#{systemProperties['java.home']}")` | Injects values from environment variables or Spring Expression Language (SpEL). |
 | `@ManyToOne` + `@JoinColumn(name = "column_id")` | Maps a many-to-one relationship and defines the foreign key column. |
 
