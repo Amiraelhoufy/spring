@@ -89,6 +89,30 @@ and MyBatis `maps` the `results` to `Java objects` automatically.<br />
            └────────────────────────────┘
 
 ```
+___
+
+ # **✅ Custom Validations:** 
+- Custom annotations (example: Email and password confirmation, refuse weak passwords)<br />
+- Steps:<br />
+  1- `@Interface`.<br />
+  2- class implements `ConstraintValidator interface` & override `isValid()` method.<br />
+  3- using `Annotation` on fields inside POJO class.<br />
+
+ -  **✅Validation Annotations: `@Valid` vs `@Validated**: <br />
+
+
+| Annotation  | Group Support | Use Case |
+|-------------|----------------|---------|
+| `@Valid`    | ❌ No           | Applies **all constraints unconditionally** &rarr; for **simple validation** (no grouping). |
+| `@Validated`| ✅ Yes          | Supports **validation groups** (e.g., `OnCreate`, `OnUpdate`) &rarr; when you need **different validation rules**. |
+
+#### Example:
+```java
+// Using validation group for update only
+@Validated(OnUpdate.class)
+public String updateProfile(@ModelAttribute("profile") ProfileDTO profileDTO) {
+    // ...
+}
 
 ___
 
