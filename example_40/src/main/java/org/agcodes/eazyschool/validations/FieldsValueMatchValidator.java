@@ -8,7 +8,6 @@ import org.springframework.beans.BeanWrapperImpl;
 public class FieldsValueMatchValidator
     implements ConstraintValidator<FieldsValueMatch, Object> {
   // Annotation, Object(POJO)
-
   private String field;
   private String fieldMatch;
 
@@ -39,4 +38,5 @@ public class FieldsValueMatchValidator
       return fieldMatchValue == null;
     }
   }
+
 }

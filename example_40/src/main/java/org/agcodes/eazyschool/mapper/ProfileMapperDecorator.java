@@ -6,36 +6,52 @@ import org.agcodes.eazyschool.model.Person;
 import org.mapstruct.Mapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 @Component("profileMapperDecorator")
-public class ProfileMapperDecorator implements ProfileMapper {
-  private final ProfileMapper delegate;
+@Primary
+public abstract class ProfileMapperDecorator implements ProfileMapper {
+  protected ProfileMapper delegate;
 
   @Autowired
-  public ProfileMapperDecorator(@Qualifier("profileMapperImpl") ProfileMapper delegate) {
+  public void setDelegate(ProfileMapper delegate) {
     this.delegate = delegate;
   }
-  @Mapping(source = "address.state", target = "state")
   @Override
-  public ProfileDTO personToProfileDTO(Person person) {
-    return delegate.personToProfileDTO(person);
+  public ProfileDTO toProfileDTO(Person person) {
+    ProfileDTO dto = delegate.toProfileDTO(person);
+    // Add any decoration logic here if needed
+    return dto;
   }
 
   @Override
-  public Person profileDTOtoPerson(ProfileDTO dto) {
-    return delegate.profileDTOtoPerson(dto);
-  }
-
- @Override
-  public void updatePersonFromProfileDTO(ProfileDTO profileDTO, Person person) {
-
-   System.out.println("test person" + person);
-   System.out.println("test profileDTO" + profileDTO);
-    // Ensure address is initialized
-    if (person.getAddress() == null) {
-      person.setAddress(new Address());
+  public Person toPerson(ProfileDTO dto) {
+    Person person = delegate.toPerson(dto);
+    if (dto != null) {
+      person.setAddress(createOrUpdateAddress(null, dto));
     }
-    // Now delegate the update logic to MapStruct
-    delegate.updatePersonFromProfileDTO(profileDTO, person);
+    return person;
+  }
+
+  @Override
+  public void updatePersonFromDTO(ProfileDTO dto, Person person) {
+    if (dto == null) {
+      return;
+    }
+
+    delegate.updatePersonFromDTO(dto, person);
+    person.setAddress(createOrUpdateAddress(person.getAddress(), dto));
+  }
+
+  private Address createOrUpdateAddress(Address existing, ProfileDTO dto) {
+    Address address = existing != null ? existing : new Address();
+
+    if (dto.getAddress1() != null) address.setAddress1(dto.getAddress1());
+    if (dto.getAddress2() != null) address.setAddress2(dto.getAddress2());
+    if (dto.getCity() != null) address.setCity(dto.getCity());
+    if (dto.getState() != null) address.setState(dto.getState());
+    if (dto.getZipCode() != null) address.setZipCode(dto.getZipCode());
+
+    return address;
   }
 }

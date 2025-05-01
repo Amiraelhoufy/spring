@@ -15,7 +15,7 @@ public class Address extends BaseEntity{
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private int addressId;
+  private Integer addressId;
 
   @NotBlank(message = "Address 1 must not be blank")
   @Size(min=5, message = "Address 1 must be at least 5 characters long")

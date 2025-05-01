@@ -4,10 +4,12 @@ import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.agcodes.eazyschool.model.Person;
 import org.agcodes.eazyschool.service.PersonService;
+import org.agcodes.eazyschool.validationGroup.OnCreate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,7 +30,7 @@ public class PublicController {
   }
 
   @PostMapping(value = "/createUser")
-  public String createUser(@Valid @ModelAttribute("person") Person person, Errors errors) {
+  public String createUser(@Validated(OnCreate.class) @ModelAttribute("person") Person person, Errors errors) {
     if(errors.hasErrors()){
       return "register.html";
     }

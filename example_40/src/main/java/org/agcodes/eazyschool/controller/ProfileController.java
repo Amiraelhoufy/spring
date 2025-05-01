@@ -4,12 +4,17 @@ import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.agcodes.eazyschool.dto.ProfileDTO;
+import org.agcodes.eazyschool.model.Address;
 import org.agcodes.eazyschool.model.Person;
+import org.agcodes.eazyschool.repository.PersonRepository;
 import org.agcodes.eazyschool.service.ProfileService;
+import org.agcodes.eazyschool.validationGroup.OnUpdate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,6 +26,7 @@ public class ProfileController {
   private final ProfileService profileService;
   @Autowired
   public ProfileController(ProfileService profileService) {
+
     this.profileService = profileService;
   }
 
@@ -63,10 +69,16 @@ public class ProfileController {
       log.error("AMIRA1 errors: {}", errors.toString());
       return "profile.html";
     }
+
     Person person = (Person) httpSession.getAttribute("loggedInPerson");
+    if (person.getAddress() == null) {
+      person.setAddress(new Address());
+    }
     // Update person with new profile data
     Person persontest = profileService.updatePersonWithProfileDTO(profileDTO, person);
-    System.out.println("Amira2 persontest in update:" + persontest);
+//    profileService.updatePerson(profileDTO, person);
+//    profileService.testPersonWithExistingAddress();
+//    System.out.println("Amira2 persontest in update:" + persontest);
 
     // Manual Update
     /*

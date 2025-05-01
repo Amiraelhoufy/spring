@@ -4,7 +4,6 @@
 
 spring.devtools.restart.enabled=true
 spring.devtools.livereload.enabled=true
-
 # === AWS Endpoint Configuration ===
 #spring.datasource.url=${SPRING_DATASOURCE_URL}
 #spring.datasource.username=admin

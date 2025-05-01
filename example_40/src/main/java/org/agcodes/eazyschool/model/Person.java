@@ -8,7 +8,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -17,6 +16,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 import org.agcodes.eazyschool.annotation.FieldsValueMatch;
 import org.agcodes.eazyschool.annotation.PasswordValidator;
+import org.agcodes.eazyschool.validationGroup.OnCreate;
 
 @Data
 @Entity
@@ -24,12 +24,14 @@ import org.agcodes.eazyschool.annotation.PasswordValidator;
     @FieldsValueMatch(
         field = "pwd",
         fieldMatch = "confirmPwd",
-        message = "Passwords don't match!"
+        message = "Passwords don't match!",
+        groups = OnCreate.class
     ),
     @FieldsValueMatch(
         field="email",
         fieldMatch = "confirmEmail",
-        message = "Email addresses don't match"
+        message = "Email addresses don't match",
+        groups = OnCreate.class
     )
 }
 )
@@ -50,18 +52,20 @@ public class Person extends BaseEntity{
         nullable = false
     )
     private Roles roles;
+
     @OneToOne(
         fetch = FetchType.EAGER,
         cascade = CascadeType.ALL,
         targetEntity = Address.class
+//        orphanRemoval = true // Delete the old address and the cascade will Create a new address with new id
     )
     @JoinColumn(
         name="address_id",
-        columnDefinition = "addressId",
+        referencedColumnName= "addressId",
+//        columnDefinition = "addressId",
         nullable = true
     )
     private Address address;
-
 
     @NotBlank(message = "Name must not be blank")
     @Size(min=3, message="Name must be at least 3 characters long")
@@ -75,7 +79,7 @@ public class Person extends BaseEntity{
     @Email(message = "Please provide a valid email address")
     private String email;
 
-    @NotBlank(message = "Confirm Email must not be blank")
+    @NotBlank(message = "Confirm Email must not be blank",groups = OnCreate.class)
     @Email(message = "Please provide a valid confirm email address")
     @Transient
     private String confirmEmail;
@@ -85,7 +89,7 @@ public class Person extends BaseEntity{
     @PasswordValidator // Validate password strength
     private String pwd;
 
-    @NotBlank(message = "Confirm Password must not be blank")
+    @NotBlank(message = "Confirm Password must not be blank",groups = OnCreate.class)
     @Size(min=5, message="Confirm Password must be at least 5 characters long")
     @Transient
     private String confirmPwd;
