@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67933f8b-e871-4fa6-8fb6-74c99c86250e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/EazySchoolApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/EazySchoolApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/MySQLConnectionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/controller/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/controller/PublicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/controller/PublicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/mapper/ProfileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/mapper/ProfileMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/mapper/ProfileMapperDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/mapper/ProfileMapperDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/service/ProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/validations/FieldsValueMatchValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/validations/FieldsValueMatchValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_40/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example_40/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,23 +35,27 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2wNWeINFo5as3zVWf4zZhEKcqpE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Github/test&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "last_opened_file_path": "E:/Github/spring/example_41",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.EazySchoolApplication">
     <configuration name="EazySchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
-      <module name="example_40" />
+      <module name="example_41" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.agcodes.eazyschool.*" />

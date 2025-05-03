@@ -1,0 +1,90 @@
+package org.agcodes.eazyschool.service;
+
+import java.util.List;
+import java.util.Optional;
+import lombok.extern.slf4j.Slf4j;
+import org.agcodes.eazyschool.exception.EazyClassNotFoundException;
+import org.agcodes.eazyschool.exception.EazyClassNotFoundException;
+import org.agcodes.eazyschool.model.EazyClass;
+import org.agcodes.eazyschool.model.Person;
+import org.agcodes.eazyschool.repository.EazyClassRepository;
+import org.agcodes.eazyschool.repository.PersonRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+@Slf4j
+@Service
+public class EazyClassService {
+
+  @Autowired
+  private final EazyClassRepository eazyClassRepository;
+
+  @Autowired
+  private final PersonRepository personRepository;
+
+  public EazyClassService(EazyClassRepository eazyClassRepository,
+      PersonRepository personRepository) {
+    this.eazyClassRepository = eazyClassRepository;
+    this.personRepository = personRepository;
+  }
+
+  public boolean saveNewClass(EazyClass eazyClass) {
+    boolean isSaved = false;
+    // Hashing password
+    EazyClass newClass = eazyClassRepository.save(eazyClass);
+    if (newClass != null && newClass.getClassId() > 0) {
+      isSaved = true;
+    }
+    return isSaved;
+  }
+
+
+  public List<EazyClass> findAllClasses() {
+    List<EazyClass> classes = eazyClassRepository.findAll();
+    System.out.println("classes: " + classes);
+    return classes;
+  }
+
+  public void deleteClass(int id) {
+    Optional<EazyClass> eazyClass = eazyClassRepository.findById(id);
+    for (Person person : eazyClass.get().getPersons()) {
+      person.setEazyClass(null);
+      personRepository.save(person);
+    }
+    eazyClassRepository.deleteById(id);
+  }
+
+  public EazyClass findClassById(int classId) {
+    return eazyClassRepository.findById(classId)
+        .orElseThrow(
+            () -> new EazyClassNotFoundException("Class with ID " + classId + " not found"));
+  }
+
+  public Boolean addStudent(Person person, EazyClass eazyClass) {
+    Person personEntity = personRepository.findByEmail(person.getEmail());
+    if (personEntity == null || !(personEntity.getPersonId() > 0)) {
+      return false;
+    }
+    // Save Class to Person Entity
+    personEntity.setEazyClass(eazyClass);
+    personRepository.save(personEntity);
+    eazyClass.getPersons().add(personEntity);
+    eazyClassRepository.save(eazyClass);
+    return true;
+  }
+
+  public EazyClass deletePerson(int personId,EazyClass eazyClass) {
+    Optional<Person> personOptional = personRepository.findById(personId);
+    if (personOptional.isEmpty()) {
+      return null;
+    }
+    Person person = personOptional.get();
+    // Break the bidirectional association
+    person.setEazyClass(null);
+    personRepository.save(person);  // Save owning side (Person)
+
+    eazyClass.getPersons().remove(person);
+    eazyClassRepository.save(eazyClass); // Save inverse side (EazyClass)
+    return eazyClass;
+  }
+
+}
