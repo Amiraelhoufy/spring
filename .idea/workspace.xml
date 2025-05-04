@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_41/src/main/java/org/agcodes/eazyschool/repository/EazyClassRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_41/src/main/java/org/agcodes/eazyschool/repository/EazyClassRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +20,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -48,14 +51,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
-    "last_opened_file_path": "E:/Github/spring/example_41",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+    "last_opened_file_path": "E:/Github/spring/example_42",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RunManager" selected="Application.EazySchoolApplication">
     <configuration name="EazySchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
-      <module name="example_41" />
+      <module name="example_42" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.agcodes.eazyschool.*" />
