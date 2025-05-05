@@ -39,7 +39,7 @@ public class AdminController {
     this.coursesService = coursesService;
   }
 
-  @GetMapping("displayClasses")
+  @GetMapping("/displayClasses")
   public ModelAndView displayClasses(){
     ModelAndView modelAndView = new ModelAndView("classes.html");
     // To add a new class
@@ -50,7 +50,7 @@ public class AdminController {
     return modelAndView;
   };
 
-  @PostMapping("addNewClass")
+  @PostMapping("/addNewClass")
   public String addNewClass(Model model,
                           @Valid @ModelAttribute("eazyClass") EazyClass eazyClass,
                           Errors errors){
@@ -64,13 +64,13 @@ public class AdminController {
     return "redirect:/admin/displayClasses";
   }
 
-  @GetMapping("deleteClass")
+  @GetMapping("/deleteClass")
   public String deleteClass(Model model, @RequestParam int id) {
     eazyClassService.deleteClass(id);
     return "redirect:/admin/displayClasses"; // resolved to students.html
   }
 
-  @GetMapping("displayStudents")
+  @GetMapping("/displayStudents")
   public String displayStudents(Model model, @RequestParam int classId, HttpSession session,
       @RequestParam(value="error",required = false) String error){
 
@@ -92,7 +92,7 @@ public class AdminController {
     return "students"; // This will resolve to students.html
   }
 
-  @PostMapping("addStudent")
+  @PostMapping("/addStudent")
   public String addStudent (Model model,@ModelAttribute("person") Person person,HttpSession session){
     EazyClass eazyClass = (EazyClass) session.getAttribute("eazyClass");
 
@@ -104,7 +104,7 @@ public class AdminController {
       return "redirect:/admin/displayStudents?classId="+eazyClass.getClassId()+"&error=invalid_email";
     }
   }
-  @GetMapping("deleteStudent")
+  @GetMapping("/deleteStudent")
   public String deleteStudent(Model model, @RequestParam int personId,HttpSession session){
     EazyClass eazyClass = (EazyClass) session.getAttribute("eazyClass");
     EazyClass updatedClass = eazyClassService.deletePerson(personId,eazyClass);
@@ -117,7 +117,7 @@ public class AdminController {
     }
   }
 
-  @GetMapping("displayCourses")
+  @GetMapping("/displayCourses")
   public String displayCourses(Model model, HttpSession session){
 
     List<Courses> courses = coursesService.findAllCourses();
@@ -130,7 +130,7 @@ public class AdminController {
     return "courses_secure";
   };
 
-  @PostMapping("addNewCourse")
+  @PostMapping("/addNewCourse")
   public String addNewCourse(Model model,
                             @Valid @ModelAttribute("course") Courses newCourse,
                             Errors errors, // Errors: Must be immediately after @Valid
@@ -140,7 +140,6 @@ public class AdminController {
     if(errors.hasErrors()){
       // Redisplay the form with validation errors
       List<Courses> courses = (List<Courses>) session.getAttribute("courses");
-      System.out.println("session:" + courses);
       model.addAttribute("courses", courses);
       model.addAttribute("addCourse", true); // to keep the modal opened
       return "courses_secure";
@@ -151,7 +150,7 @@ public class AdminController {
 
 
 
-  @GetMapping("viewStudents")
+  @GetMapping("/viewStudents")
   public String viewStudents(Model model,
                             @RequestParam(name="id") int courseId,
                             HttpSession session,
@@ -160,17 +159,55 @@ public class AdminController {
     // Customized error message
     if ("invalid_email".equals(error)) {
       model.addAttribute("errorMessage", "Invalid Email Entered!");
+    }else if ("remove_student_error".equals(error)) {
+      model.addAttribute("errorMessage", "An Error occurred while removing student from course!");
     }
 
-    Courses courses = coursesService.findCourseById(courseId);
+    Courses course = coursesService.findCourseById(courseId);
     // Get current class info
-    model.addAttribute("courses", courses);
+    model.addAttribute("course", course);
+    // Save Current Course to Session
+    session.setAttribute("course",course);
     // To add a new student
     model.addAttribute("person",new Person());
 
     return "course_students"; // This will resolve to course_students.html
   }
+  @PostMapping("/addStudentToCourse")
+  public String addStudentToCourse(Model model,
+                                   @ModelAttribute Person person,
+                                   HttpSession session) {
 
+    Courses course = (Courses) session.getAttribute("course");
+    List<Courses> courses = (List<Courses>) session.getAttribute("courses");
+    boolean isSaved = coursesService.addStudent(person,course);
 
+    if(isSaved){
+      if(!courses.contains(course)){
+        courses.add(course);
+      }
+      session.setAttribute("courses",courses);
+      session.setAttribute("course",course);
+      return "redirect:/admin/viewStudents?id="+course.getCourseId();
+    }else{
+      model.addAttribute("errorMessage","Invalid Email Entered!");
+      return "redirect:/admin/viewStudents?id="+course.getCourseId()+"&error=invalid_email";
+    }
+  }
 
+  @GetMapping("/deleteStudentFromCourse")
+  public String deleteStudentFromCourse(Model model,
+                                        @RequestParam int personId,
+                                        HttpSession session){
+
+    Courses course = (Courses)session.getAttribute("course");
+    Person updatedPerson = coursesService.deleteStudent(personId,course);
+    if(updatedPerson != null){
+      // updating the course in session
+      session.setAttribute("course",course);
+      return "redirect:/admin/viewStudents?id="+course.getCourseId();
+    }else{
+      return "redirect:/admin/viewStudents?id="+course.getCourseId()+"&error=remove_student_error";
+    }
+  }
 }

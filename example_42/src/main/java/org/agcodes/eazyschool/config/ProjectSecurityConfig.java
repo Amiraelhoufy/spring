@@ -37,6 +37,7 @@ public class ProjectSecurityConfig {
             .requestMatchers(mvc.pattern("/displayMessages")).hasRole("ADMIN")
             .requestMatchers(mvc.pattern("/admin/**")).hasRole("ADMIN")
             .requestMatchers(mvc.pattern("/closeMsg/**")).hasRole("ADMIN")
+            .requestMatchers(mvc.pattern("/student")).hasRole("STUDENT")
             .requestMatchers(mvc.pattern("/"),mvc.pattern( "/home")).permitAll()
             .requestMatchers(mvc.pattern("/holidays/**")).permitAll()
             .requestMatchers(mvc.pattern("/contact")).permitAll()

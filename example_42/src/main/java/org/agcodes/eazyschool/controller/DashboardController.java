@@ -26,6 +26,9 @@ public String displayDashboard(Model model, Authentication authentication, HttpS
     Person person = personRepository.readByEmail(authentication.getName()); // get the email through authentication
     model.addAttribute("username", person.getName());
     model.addAttribute("roles",authentication.getAuthorities().toString());
+    if(person.getEazyClass() != null && person.getEazyClass().getName() !=null){
+      model.addAttribute("enrolledClass",person.getEazyClass().getName());
+    }
     httpSession.setAttribute("loggedInPerson",person);
 //    throw new RuntimeException("It's been a bad day!!");
     return "dashboard.html";
