@@ -3,15 +3,19 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="spring" />
+      <module name="example_42" />
+      <module name="example_43" />
+    </loaded-modules>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="67933f8b-e871-4fa6-8fb6-74c99c86250e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_42/src/main/java/org/agcodes/eazyschool/config/ProjectSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_42/src/main/java/org/agcodes/eazyschool/config/ProjectSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_42/src/main/java/org/agcodes/eazyschool/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_42/src/main/java/org/agcodes/eazyschool/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_42/src/main/java/org/agcodes/eazyschool/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_42/src/main/java/org/agcodes/eazyschool/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_42/src/main/java/org/agcodes/eazyschool/service/CoursesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_42/src/main/java/org/agcodes/eazyschool/service/CoursesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_42/src/main/resources/templates/course_students.html" beforeDir="false" afterPath="$PROJECT_DIR$/example_42/src/main/resources/templates/course_students.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_42/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/example_42/src/main/resources/templates/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
-    "last_opened_file_path": "E:/Github/spring/example_42",
+    "last_opened_file_path": "E:/Github/spring/example_43",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
@@ -65,7 +69,7 @@
   <component name="RunManager" selected="Application.EazySchoolApplication">
     <configuration name="EazySchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
-      <module name="example_42" />
+      <module name="example_43" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.agcodes.eazyschool.*" />
@@ -120,6 +124,11 @@
     </task>
     <servers />
   </component>
+  <component name="UnloadedModulesList">
+    <module name="example_39" />
+    <module name="example_40" />
+    <module name="example_41" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -127,6 +136,21 @@
           <url>file://$PROJECT_DIR$/example_40/src/main/java/org/agcodes/eazyschool/controller/ProfileController.java</url>
           <line>77</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example_43/src/main/java/org/agcodes/eazyschool/controller/ContactController.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example_43/src/main/java/org/agcodes/eazyschool/controller/ContactController.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example_43/src/main/java/org/agcodes/eazyschool/controller/ContactController.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
