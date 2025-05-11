@@ -168,6 +168,79 @@ allocationSize = 1               // Optional: 1 = get a new value every time (no
 
 
 ___
+ # **:arrows_clockwise:	Sorting:** 
+ - Before JPA we used to sort manually in sql ```Order By```.
+ - Spring ```Data JPA``` sorts the query result with ```Easier Configs```.
+ - Provides default implementation of sorting with the help of ```PaginationAndSortingRepository```.
+
+ **:two: Ways Of Sorting**:
+
+ 1- ```Static Sorting```: Retrieved data always sorted by **specified** **columns** and **directions** at **development time** and can't be changed at **runtime**.</br>
+The **default** sort direction is "asc", You don’t have to clearly write out "asc" (Optional).
+
+ ```java
+  List<Person> findByOrderByNameDesc();
+ ```
+ 2- ```Dynamic Sorting```: More **flexible** where you can choose sorting **column** and **direction** at **runtime**. </br>
+ **Sort parameter** to **query method** [Sort Class]
+ ```java
+Sort sort = Sort.by("name").ascending();
+coursesRepository.findAll(sort);
+ ```
+ # **:page_with_curl:	Pagination:** 
+ - Spring ```Data JPA``` also supports pagination which helps easier to ```manage``` & ```display``` & ```understand``` ```large amount of data``` in various pages.
+ - **Special paramter** (like sorting) called **pageable (interface)** combines both ```Pagination``` & ```Sorting```. 
+
+**&rarr; Dynamic Sorting**: 
+ ```java
+Pageable pageable = (Pageable) PageRequest.of
+(pageNum-1, /* 1st page starts at */
+ pageSize,  /* no. of pages */
+  sortDir.equals("asc")? Sort.by(sortField).ascending() : Sort.by(sortField).descending());
+
+ Page<Contact> contactMsgs = contactRepository.findByStatus(EazySchoolConstants.OPEN,pageable);
+ ```
+ **Structure before spring-data-jpa(3.x)**: 
+
+- Old (`CrudRepository`, `PagingAndSortingRepository`):
+  - `saveAll(...)` → Iterable<T>
+  - `findAll()` → Iterable<T>
+
+ ```
+ Repository
+   ↑
+CrudRepository
+   ↑
+PagingAndSortingRepository
+   ↑
+JpaRepository
+ ```
+
+**Structure In the new (3.x) version of spring-data-jpa(3.x)**: 
+#### 🔁 Evolution of Return Types
+- New (`ListCrudRepository`, `ListPagingAndSortingRepository`):
+  - `saveAll(...)` → List<T>
+  - `findAll()` → List<T>
+
+ ```               
+               Repository (marker interface)
+            ↑                                ↑
+     CrudRepository              PagingAndSortingRepository
+            ↑                                ↑
+ ListCrudRepository          ListPagingAndSortingRepository (deprecated in 3.1)
+            \____________________  ____/
+                                ↓
+                         JpaRepository
+ ```
+
+![Spring Data](./assets/spring-data.png)
+![Repository Structute](./assets/Repo_structure_After(3.x).jpg)
+
+- **CrudRepository** &rarr; provides ```CRUD functions```.
+- **PagingAndSortingRepository** &rarr; provides ```methods``` to do ```pagination``` and ```sorting``` records.
+- **JpaRepository** &rarr; provides some ```JPA-related methods``` such as ```flushing``` the persistence context and ```deleting``` records in a batch.
+
+___
  # **:cloud: Amazon Web Services (AWS) :** 
  - `DB deployment`: `1- Local Deployment` (on PC) or `2- Cloud Deployment` (AWS, GCP, Azure, etc)
  - `Amazon RDS` (Relational Database) is a `managed service` that makes it easy to set up, operate, Secure, reliable, and scale a relational database in the `cloud`. <br />
