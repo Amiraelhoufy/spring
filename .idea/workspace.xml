@@ -5,9 +5,8 @@
   </component>
   <component name="AutomaticModuleUnloader">
     <loaded-modules>
+      <module name="example_45" />
       <module name="example_44" />
-      <module name="example_42" />
-      <module name="example_43" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
@@ -15,9 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -58,7 +62,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/Github/spring/example_44",
+    "last_opened_file_path": "E:/Github/spring/example_45",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
@@ -70,7 +74,7 @@
   <component name="RunManager" selected="Application.EazySchoolApplication">
     <configuration name="EazySchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
-      <module name="example_44" />
+      <module name="example_45" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.agcodes.eazyschool.*" />
@@ -129,6 +133,8 @@
     <module name="example_39" />
     <module name="example_40" />
     <module name="example_41" />
+    <module name="example_42" />
+    <module name="example_43" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -158,6 +164,7 @@
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.agcodes.eazyschool.model.Person" memberName="address" />
+        <PinnedItemInfo parentTag="org.agcodes.eazyschool.model.Response" memberName="statusCode" />
         <PinnedItemInfo parentTag="org.springframework.aop.framework.ProxyFactory" memberName="aopProxyFactory" />
       </pinned-members>
     </pin-to-top-manager>
