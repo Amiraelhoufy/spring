@@ -6,6 +6,7 @@
   <component name="AutomaticModuleUnloader">
     <loaded-modules>
       <module name="example_45" />
+      <module name="example_47" />
       <module name="example_44" />
       <module name="example_46" />
     </loaded-modules>
@@ -63,7 +64,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/Github/spring/example_46",
+    "com.codeium.enabled": "true",
+    "last_opened_file_path": "E:/Github/spring/example_47",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
@@ -72,7 +74,20 @@
       <recent name="org.agcodes.eazyschool.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RestConsumer">
+  <component name="RunManager" selected="Application.EazySchoolApplication (1)">
+    <configuration name="EazySchoolApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
+      <module name="example_47" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.agcodes.eazyschool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EazySchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
       <module name="example_45" />
@@ -122,12 +137,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.org.agcodes.eazyschool" />
+      <item itemvalue="Application.EazySchoolApplication (1)" />
       <item itemvalue="Application.RestConsumer" />
       <item itemvalue="Application.MySQLConnectionTest" />
       <item itemvalue="Application.EazySchoolApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EazySchoolApplication (1)" />
         <item itemvalue="Application.RestConsumer" />
         <item itemvalue="Application.EazySchoolApplication" />
         <item itemvalue="Application.MySQLConnectionTest" />
