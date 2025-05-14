@@ -7,14 +7,15 @@
     <loaded-modules>
       <module name="example_45" />
       <module name="example_44" />
+      <module name="example_46" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67933f8b-e871-4fa6-8fb6-74c99c86250e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_45/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example_45/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_45/src/main/java/org/agcodes/eazyschool/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_45/src/main/java/org/agcodes/eazyschool/model/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_45/src/main/java/org/agcodes/eazyschool/rest/ContactRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/example_45/src/main/java/org/agcodes/eazyschool/rest/ContactRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +27,9 @@
       <list>
         <option value="Enum" />
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -62,7 +63,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/Github/spring/example_45",
+    "last_opened_file_path": "E:/Github/spring/example_46",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
@@ -71,7 +72,7 @@
       <recent name="org.agcodes.eazyschool.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EazySchoolApplication">
+  <component name="RunManager" selected="Application.RestConsumer">
     <configuration name="EazySchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
       <module name="example_45" />
@@ -98,6 +99,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.agcodes.restconsumer.RestConsumer" />
+      <module name="example_46" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.agcodes.restconsumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="org.agcodes.eazyschool" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool" />
       <module name="spring" />
@@ -108,11 +122,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.org.agcodes.eazyschool" />
+      <item itemvalue="Application.RestConsumer" />
       <item itemvalue="Application.MySQLConnectionTest" />
       <item itemvalue="Application.EazySchoolApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RestConsumer" />
         <item itemvalue="Application.EazySchoolApplication" />
         <item itemvalue="Application.MySQLConnectionTest" />
       </list>
