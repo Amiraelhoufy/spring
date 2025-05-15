@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="example_46" />
       </profile>
-      <profile name="Annotation profile for example_48" enabled="true">
+      <profile name="Annotation profile for example_49" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -19,6 +19,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
+        <module name="example_49" />
         <module name="example_47" />
         <module name="example_48" />
       </profile>
@@ -45,6 +46,7 @@
       <module name="example_46" options="-parameters" />
       <module name="example_47" options="-parameters" />
       <module name="example_48" options="-parameters" />
+      <module name="example_49" options="-parameters" />
     </option>
   </component>
 </project>

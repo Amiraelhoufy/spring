@@ -5,6 +5,7 @@
   </component>
   <component name="AutomaticModuleUnloader">
     <loaded-modules>
+      <module name="example_49" />
       <module name="example_47" />
       <module name="example_48" />
       <module name="example_46" />
@@ -15,7 +16,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,13 +65,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
-    "last_opened_file_path": "E:/Github/spring/example_48",
+    "last_opened_file_path": "E:/Github/spring/example_49/src/main/resources",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.agcodes.eazyschool.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Github\spring\example_49\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Application.EazySchoolApplication">
@@ -90,7 +93,7 @@
     </configuration>
     <configuration name="EazySchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
-      <module name="example_48" />
+      <module name="example_49" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.agcodes.eazyschool.*" />
