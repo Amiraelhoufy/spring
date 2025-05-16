@@ -7,8 +7,10 @@
     <loaded-modules>
       <module name="example_49" />
       <module name="example_47" />
+      <module name="example_50" />
       <module name="example_48" />
       <module name="example_46" />
+      <module name="example_51" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
@@ -16,6 +18,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +68,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
-    "last_opened_file_path": "E:/Github/spring/example_49/src/main/resources",
+    "last_opened_file_path": "E:/Github/spring/example_51",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
@@ -91,9 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EazySchoolApplication (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
+      <module name="example_51" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.agcodes.eazyschool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EazySchoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
-      <module name="example_49" />
+      <module name="example_50" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.agcodes.eazyschool.*" />
@@ -140,6 +156,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.org.agcodes.eazyschool" />
+      <item itemvalue="Application.EazySchoolApplication (2)" />
       <item itemvalue="Application.EazySchoolApplication (1)" />
       <item itemvalue="Application.RestConsumer" />
       <item itemvalue="Application.MySQLConnectionTest" />
@@ -148,6 +165,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.EazySchoolApplication" />
+        <item itemvalue="Application.EazySchoolApplication (2)" />
         <item itemvalue="Application.EazySchoolApplication (1)" />
         <item itemvalue="Application.RestConsumer" />
         <item itemvalue="Application.MySQLConnectionTest" />
