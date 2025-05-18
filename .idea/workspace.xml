@@ -11,6 +11,7 @@
       <module name="example_48" />
       <module name="example_46" />
       <module name="example_51" />
+      <module name="example_52" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
@@ -18,7 +19,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +68,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
-    "last_opened_file_path": "E:/Github/spring/example_51",
+    "last_opened_file_path": "E:/Github/spring/example_52",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
@@ -80,10 +80,18 @@
       <recent name="E:\Github\spring\example_49\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EazySchoolApplication">
-    <configuration name="EazySchoolApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.EazySchoolApplication Final">
+    <configuration name="EazySchoolApplication Final" type="Application" factoryName="Application" temporary="true">
+      <envs>
+        <env name="SPRING_DATASOURCE_URL" value="jdbc:mysql://springdb.cna4goioma72.eu-central-1.rds.amazonaws.com/eazyschool" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
-      <module name="example_47" />
+      <module name="example_52" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.agcodes.eazyschool.*" />
@@ -94,9 +102,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EazySchoolApplication (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="EazySchoolApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.agcodes.eazyschool.EazySchoolApplication" />
-      <module name="example_51" />
+      <module name="example_47" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.agcodes.eazyschool.*" />
@@ -156,7 +164,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.org.agcodes.eazyschool" />
-      <item itemvalue="Application.EazySchoolApplication (2)" />
+      <item itemvalue="Application.EazySchoolApplication Final" />
       <item itemvalue="Application.EazySchoolApplication (1)" />
       <item itemvalue="Application.RestConsumer" />
       <item itemvalue="Application.MySQLConnectionTest" />
@@ -164,8 +172,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EazySchoolApplication Final" />
         <item itemvalue="Application.EazySchoolApplication" />
-        <item itemvalue="Application.EazySchoolApplication (2)" />
         <item itemvalue="Application.EazySchoolApplication (1)" />
         <item itemvalue="Application.RestConsumer" />
         <item itemvalue="Application.MySQLConnectionTest" />
