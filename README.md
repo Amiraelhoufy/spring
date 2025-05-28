@@ -90,7 +90,31 @@ and MyBatis `maps` the `results` to `Java objects` automatically.<br />
 
 ```
 ___
+#  **✅ Build Tools in Java/Spring Boot:**
+- `Automate` `tasks` like &rarr;
+ `compiling`, `packaging` (jar/war), and `managing dependencies` (External libraries), running `tests` and `deploy` apps.
 
+- Build tools:<br />
+1- `Maven` is easier to understand but verbose (more detailed than necessary).<br />
+2- `Gradle` is faster and more flexible, but needs more initial learning.<br />
+
+###  **🚀 Maven vs Gradle: Summary:**
+
+| Feature                   | Maven                                            | Gradle                                                 |
+| ------------------------- | ------------------------------------------------ | ------------------------------------------------------ |
+| **Build File Format**     | XML (`pom.xml`)                                  | Groovy or Kotlin (`build.gradle` / `build.gradle.kts`) |
+| **Syntax**                | Verbose, declarative                             | Concise, script-like, flexible                         |
+| **Performance**           | Slower (`no caching` or `parallel build` by default) | Faster (uses `caching`(no rebuild for unchanged things), `incremental`(builds only new changes) and `parallel builds`) |
+| **Learning Curve**        | Easier for beginners                             | Steeper, requires scripting knowledge                  |
+| **Customization**         | Limited (based on plugin and XML structure)      | Highly customizable with scripting logic               |
+| **Build Output**          | Fixed (`target/`)                                | Configurable (`build/` by default)                     |
+| **Plugin Ecosystem**      | Mature and widely supported                      | Modern and very flexible (especially for android)                               |
+| **Tooling Support**       | Excellent (supported in all major IDEs)          | Excellent, especially strong for Android               |
+| **Dependency Management** | Uses Maven Central                               | Uses Maven Central and other repositories              |
+| **Community**             | Large, well-established                          | Growing fast, widely adopted in modern projects        |
+
+
+___
  # **✅ Custom Validations:** 
 - Custom annotations (example: Email and password confirmation, refuse weak passwords)<br />
 - Steps:<br />
